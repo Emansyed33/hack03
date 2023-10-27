@@ -55,6 +55,13 @@ int main()
 
     }
     
+    exceeding_limit= end_result-lim;
+    if(exceeding_limit>0 && GBs_used!=lim)
+    {
+      printf("continuing this high usage,you'll exceed your data plan by %.2f GB\n",exceeding_limit);
 
+    }
+
+  return 0;
     
 }
