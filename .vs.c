@@ -41,6 +41,20 @@ int main()
       daily_allowance=(GB_limit-GBs_used)/(30-days);
       printf("To stay below your data plan,use no more than %.2f GB/day.",daily_allowance);
     }
+
+    if(GBs_used==lim)
+    {
+      printf("you have already met your limit for this month. looks like you're getting some overage charges...\n");
+    }
+
+    if(average_spending<0.50)
+    {
+      printf("you are at or below your average daily use(0.50GB/day)\n");
+      daily_allowance=(GB_limit-GBs_used)/(30-days);
+      printf("you can use up to %.2f GB/day and your below data plan limit.",daily_allowance);
+
+    }
     
+
     
 }
