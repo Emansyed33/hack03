@@ -33,5 +33,14 @@ int main()
     average_spending=GBs_used/days;
     printf("Average daily use:%.2f", average_spending);
 
+    end_result= average_spending*30;
+
+    if(average_spending>0.50 && GBs_used!=lim)
+    {
+      printf("you are exceding your average daily use(0.50 GB/day)\n");
+      daily_allowance=(GB_limit-GBs_used)/(30-days);
+      printf("To stay below your data plan,use no more than %.2f GB/day.",daily_allowance);
+    }
+    
     
 }
