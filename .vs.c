@@ -17,4 +17,21 @@ int main()
     float daily_allowance;
     int lim;
 
+    printf("Enter the Limit:");
+      scanf("%d", &lim);
+
+    printf("Enter the number of days spent:");
+      scanf("%d", &days);
+    
+    printf("enter the total number of GBs used so for:");
+      scanf("%f", &GBs_used);
+
+    remaining_days=30-days;
+
+    printf("%d days used, %d days remaining!",days,remaining_days);
+
+    average_spending=GBs_used/days;
+    printf("Average daily use:%.2f", average_spending);
+
+    
 }
